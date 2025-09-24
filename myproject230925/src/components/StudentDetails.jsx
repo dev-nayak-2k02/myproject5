@@ -5,7 +5,7 @@ export default function StudentDetails(studentData){
         <div>
             <p>name = {name}</p>
             <p>Roll = {roll}</p>
-            <p>marks = {marks.map((mark)=>{return <span key={mark}>{mark}, </span>})}</p>
+            <p>marks = {marks.map((mark)=>{return <span key={mark}>{mark} </span>})}</p>
         </div>
     )
 }
