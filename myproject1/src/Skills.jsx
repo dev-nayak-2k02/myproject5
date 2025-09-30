@@ -1,9 +1,8 @@
-export default function Skill({list1,list2,list3}){
-    return(
-        <>
-            {list1}
-            {list2}
-            {list3}
-        </>
-    );
+import { useState } from "react";
+export default function Skill({ list }) {
+  return (
+    <li>
+      <h3>{list}</h3>
+    </li>
+  );
 }
