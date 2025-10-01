@@ -1,9 +1,8 @@
 import { useState } from "react";
-export default function Form() {
+export default function Form({todos, setTodos}) {
   const [todo, setTodo] = useState("");
-  const [todos, setTodos] = useState([]);
 
-  function handleSubmit(e) {
+    function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]);
     setTodo("");
