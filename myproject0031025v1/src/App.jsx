@@ -1,8 +1,8 @@
-import Todo from "../../myproject021025v1/src/components/Todo"
+import Todo from "../../myproject0031025v1/src/components/Todo"
 function App() {
   return (
     <>
-      <Todo/>
+      <Todo />
     </>
   )
 }
