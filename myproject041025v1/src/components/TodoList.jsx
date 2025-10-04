@@ -1,5 +1,5 @@
 import TodoItem from "./TodoItem";
-export default function TodoList({ todos }) {
+export default function TodoList({ todos,setTodos }) {
   return (
     <>
       {todos.map((item) => (

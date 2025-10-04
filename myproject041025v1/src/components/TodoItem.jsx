@@ -1,6 +1,6 @@
-export default function TodoItem({ item }) {
+export default function TodoItem({ item,todos,setTodos }) {
     function handleDelete(item){
-        console.log(item,'clicked and deleted')
+        setTodos(todos.filter((item)=>item !== item))
     }
   return (
     <h1>
