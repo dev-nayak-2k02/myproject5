@@ -3,7 +3,7 @@ export default function TodoList({ todos }) {
   return (
     <>
       {todos.map((item) => (
-        <TodoItem key={item} item={item} />
+        <TodoItem key={item} item={item} todos={todos} setTodos={setTodos}/>
       ))}
     </>
   );
