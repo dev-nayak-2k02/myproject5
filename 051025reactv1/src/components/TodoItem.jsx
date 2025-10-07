@@ -1,6 +1,6 @@
 export default function TodoItem({ item, todos, setTodos }) {
   function handleDelete(item) {
-    setTodos(todos.filter((todo) => todo !== todo));
+    setTodos(todos.filter((todo) => todo !== item));
   }
   return (
     <h1>
