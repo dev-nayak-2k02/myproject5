@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Counter(){
     const[count,setCount] = useState(1)
-    const[val,setVal] = useState(1)
+    const[val,setVal] = useState(0)
     return(
         <>
             <input type="text" value={val} onChange={(e)=>setVal(e.target.value)}/>
