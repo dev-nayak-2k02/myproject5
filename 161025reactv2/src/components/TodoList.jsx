@@ -1,8 +1,8 @@
 import TodoItem from "./TodoItem";
-export default function TodoList(){
+export default function TodoList({todos}){
     return(
         <>
-            {TodoList.map((item)=>(
+            {todos.map((item)=>(
                 <TodoItem key={item} item={item}/>
             ))}
         </>
