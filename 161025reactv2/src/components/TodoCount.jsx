@@ -1,9 +1,8 @@
 export default function TodoCount({todos}){
     return(
         <>
-            {todos.length}
             {todos.map((item)=>{
-                return <span>{item}</span>
+                return <span key={id}>{item}</span>
             })}
         </>
     )
