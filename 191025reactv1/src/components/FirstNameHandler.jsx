@@ -1,4 +1,5 @@
 import { useState } from "react"
+import TitleHandler from "./TitleHandler";
 
 export default function FirstNameHandler(){
     const[name,setName] = useState('');
@@ -6,8 +7,7 @@ export default function FirstNameHandler(){
         <>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
             <button>Add</button>
-            {name}
+            <TitleHandler name={name}/>
         </>
-        
     )
 }

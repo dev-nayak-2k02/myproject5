@@ -1,4 +1,5 @@
 import FirstNameHandler from "./components/FirstNameHandler"
+import TitleHandler from "./components/TitleHandler"
 
 function App() {
 
