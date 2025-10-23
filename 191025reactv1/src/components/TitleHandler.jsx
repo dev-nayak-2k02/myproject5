@@ -1,8 +1,9 @@
 import { useState } from "react";
-function TitleHandler({ name }){
+function TitleHandler({ name, setName }){
     const[title,setTitle] = useState();
     function addNameTitle(){
-        setTitle(`${name} ${title}`);
+        setTitle(title)
+        setName(`${name} ${title}`);
     }
     return(
         <>

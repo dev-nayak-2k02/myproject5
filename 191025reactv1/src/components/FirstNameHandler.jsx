@@ -7,7 +7,8 @@ export default function FirstNameHandler(){
         <>
             <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
             <button>Add</button>
-            <TitleHandler name={name}/>
+            <h3>{name}</h3>
+            <TitleHandler name={name} setName={setName}/>
         </>
     )
 }
