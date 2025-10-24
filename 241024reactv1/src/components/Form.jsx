@@ -8,7 +8,7 @@ export default function Form({ todos, setTodos }) {
   }
   return (
     <>
-      <form onClick={handleClick}>
+      <form onSubmit={handleClick}>
         <input
           type="text"
           value={todo}
