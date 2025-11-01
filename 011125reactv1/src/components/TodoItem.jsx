@@ -1,12 +1,18 @@
-export default function TodoItem({ item }) {
-    function handleDelete(item){
-        
-    }
+export default function TodoItem({ item, todos, setTodos }) {
+  function handleDelete(item) {
+    setTodos(todos.filter((todo)=>todo !== item))
+  }
   return (
     <h3>
       {item}
       <span>
-        <button onClick={()=>{handleDelete(item)}}>X</button>
+        <button
+          onClick={() => {
+            handleDelete(item);
+          }}
+        >
+          X
+        </button>
       </span>
     </h3>
   );
