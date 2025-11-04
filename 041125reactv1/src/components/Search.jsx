@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 export default function Search(){
-    const[query,setQuery] = setQuery('pizza')
+    const[query,setQuery] = useState('pizza')
     useEffect(()=>{
         function demo(){
-            alert('hello! there');
+            console.log('hello! there');
         }
         demo()
     },[])
