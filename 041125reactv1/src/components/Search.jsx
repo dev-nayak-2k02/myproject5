@@ -7,7 +7,7 @@ export default function Search(){
             console.log('hello! there');
         }
         demo()
-    },[])
+    },[query])
 
     return(
         <div>
