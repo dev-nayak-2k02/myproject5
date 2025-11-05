@@ -1,11 +1,9 @@
-export default function Student({name, gender}){
-    
-    // let name = 'Devu granadi';
-    // let gender = 'male';
+export default function Header(){
+
     return(
         <>
-            <h1>Name: {name}</h1>
-            <h1>Gender: {gender}</h1>
+            <h1>Name: Devu Pahadi</h1>
+            <h2>desc: I'm an aspiring web developer</h2>
         </>
     )
 }

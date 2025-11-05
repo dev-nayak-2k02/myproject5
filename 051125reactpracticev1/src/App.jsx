@@ -1,8 +1,8 @@
-import Student from "./components/Header"
+import Header from "./components/Header"
 function App() {
   return (
     <>
-      <Student name='Devu pahadi' gender='Male'/>
+      <Header />
     </>
   )
 }
