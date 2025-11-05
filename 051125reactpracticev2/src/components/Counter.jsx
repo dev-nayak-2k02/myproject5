@@ -3,7 +3,11 @@ import { useState } from "react"
 export default function Counter(){
     const[count, setCount] = useState(0);
     function handleCounter(){
-        setCount(count + 1);
+        incrementer(setCount)
+    }
+
+    function incrementer(fn){
+        fn(count+1);
     }
     return(
         <>
