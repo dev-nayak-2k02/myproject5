@@ -2,7 +2,7 @@ import Student from "./components/Student"
 function App() {
   return (
     <>
-      <Student />
+      <Student name='Devu pahadi' gender='Male'/>
     </>
   )
 }
