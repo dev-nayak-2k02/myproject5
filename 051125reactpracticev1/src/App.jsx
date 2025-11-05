@@ -1,4 +1,4 @@
-import Student from "./components/Student"
+import Student from "./components/Header"
 function App() {
   return (
     <>
