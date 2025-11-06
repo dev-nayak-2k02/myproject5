@@ -5,7 +5,7 @@ export default function Child({onSendData}){
     return(
         <>
             <h3>Child component</h3>
-            <button></button>
+            <button onClick={sendData}>Send Data to parent</button>
         </>
     )
 }
