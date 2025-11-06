@@ -1,18 +1,16 @@
-import { useState } from "react"
+import { useState } from "react";
 import Child from "./Child";
 
-function App() {
+export default function App(){
   const[message, setMessage] = useState('');
-  const handleDataFromChild = (childData) =>{
-    setMessage(childData);
-  };
-  return (
+  const handleDataOfChild = (param)=>{
+    setMessage(param)
+  }
+  return(
     <>
       <h2>Parent Component</h2>
-      <p>Message from child: {message}</p>
-      <Child onSendData={handleDataFromChild}/>  
+      <p>message from child: {message}</p>
+      <Child/>
     </>
   )
 }
-
-export default App
