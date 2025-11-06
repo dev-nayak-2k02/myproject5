@@ -6,9 +6,9 @@ export default function Counter(){
     return(
         <>
             <input type="text" value={count} onChange={(e)=>setCount(e.target.value)}/>
-            <h3></h3>
-            <input type="text" />
-            <button></button>
+            <h3>{count}</h3>
+            <input type="text" value={val} onChange={(e)=>setVal(e.target.value)}/>
+            <button onClick={(e)=>setCount(count + Number(val))}>Add</button>
         </>
     )
 }
