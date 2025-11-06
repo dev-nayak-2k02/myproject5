@@ -11,4 +11,4 @@ export default function Counter(){
             <button onClick={(e)=>setCount(count + Number(val))}>Add</button>
         </>
     )
-}
+} 
