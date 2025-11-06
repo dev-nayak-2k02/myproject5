@@ -10,7 +10,7 @@ export default function App(){
     <>
       <h2>Parent Component</h2>
       <p>message from child: {message}</p>
-      <Child/>
+      <Child onSendData = {handleDataOfChild}/>
     </>
   )
 }
