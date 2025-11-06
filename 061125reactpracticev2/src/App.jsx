@@ -3,7 +3,7 @@ import Student from "./Student"
 function App() {
   const data = {
     name: 'dev',
-    class: 10,
+    clas: 10,
     marks: [99,87.78,98]
   }
 
