@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 
 export default function Effect() {
   const [query, setQuery] = useState("pizza");
+  useEffect(()=>{
+    function demo(){
+        console.log('Effect has occured');
+    }
+  },[query])
+  demo();
   return (
     <>
       <h2>{query}</h2>
