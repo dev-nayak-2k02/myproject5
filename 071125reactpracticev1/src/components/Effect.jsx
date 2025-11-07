@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 export default function Effect() {
   const [query, setQuery] = useState("pizza");
   useEffect(()=>{
-    function demo(){
-        console.log('Effect has occured');
+    async function getFoodData() {
+        const result = await fetch ('https://api.spoonacular.com/recipes/complexSearch?query=pasta&apiKey=ded7bbedd88a4be6b31d943077c0faac');
+        const data = await result.json();
+        console.log(data);
     }
-    demo();
+    getFoodData()
   },[query])
   return (
     <>
