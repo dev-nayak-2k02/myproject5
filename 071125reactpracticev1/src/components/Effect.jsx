@@ -6,8 +6,8 @@ export default function Effect() {
     function demo(){
         console.log('Effect has occured');
     }
+    demo();
   },[query])
-  demo();
   return (
     <>
       <h2>{query}</h2>
