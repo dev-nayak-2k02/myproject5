@@ -1,12 +1,12 @@
 import Effect from "./components/Effect"
 function App() {
-  function getImage(){
-    
+  function getImage(fn){
+    fn();
   }
   return (
     <>
       
-      <Effect />
+      <Effect getData = {getImage}/>
     </>
   )
 }
