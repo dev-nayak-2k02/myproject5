@@ -4,20 +4,22 @@ import { useEffect, useState } from "react";
 
 export default function Effect({ getData }) {
   const [query, setQuery] = useState("pizza");
-  const [data, setData] = useState(null);
+  const [datas, setDatas] = useState(null);
 
   useEffect(() => {
     async function getFoodData() {
       let res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
       let data = await res.json();
       console.log(data.results[0].image)
-      let datas = data.results[0].image;
+      setDatas(data.results[0].image)
     }
     getFoodData();
   }, [query]);
+
   function returnData() {
     getData(datas);
   }
+  
   return (
     <>
       <input
