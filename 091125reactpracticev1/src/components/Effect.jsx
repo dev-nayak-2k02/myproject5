@@ -7,9 +7,12 @@ export default function Effect() {
 
   useEffect(()=>{
     async function getFoodData() {
-        let res = await fetch(`${URL}`)
+        let res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
+        let data = await res.json();
+        console.log(data)
     }
-  },[])
+    getFoodData();
+  },[query])
   return (
     <>
       <input
