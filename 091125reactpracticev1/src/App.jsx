@@ -1,7 +1,7 @@
 import Effect from "./components/Effect"
 function App() {
-  function getImage(fn){
-    fn();
+  function getImage(param){
+    console.log(param)
   }
   return (
     <>
