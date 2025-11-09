@@ -9,7 +9,7 @@ export default function Effect() {
     async function getFoodData() {
         let res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
         let data = await res.json();
-        console.log(data)
+        console.log(data.results[0].image);
     }
     getFoodData();
   },[query])
