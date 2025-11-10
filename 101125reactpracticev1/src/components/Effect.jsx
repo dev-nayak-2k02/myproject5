@@ -3,12 +3,13 @@ let API_KEY = 'ded7bbedd88a4be6b31d943077c0faac';
 import { useEffect, useState } from "react";
 
 export default function Effect() {
+    let data,result,item;
   const [query, setQuery] = useState("pizza");
   useEffect(()=>{
     async function getFoodData() {
-        let data = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
-        let result = await data.json();
-        console.log(result.results);
+        data = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
+        result = await data.json();
+        item = result.results[0].id;
     }
     getFoodData()
   },[query])
@@ -20,6 +21,9 @@ export default function Effect() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
+      {
+        <h1>{item}</h1>
+      }
     </>
   );
 }
