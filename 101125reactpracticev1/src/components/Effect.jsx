@@ -23,7 +23,9 @@ export default function Effect() {
         onChange={(e) => setQuery(e.target.value)}
       />
       {
-        <img src={item} alt="" />
+        <div class='item'>
+          <img src={item} alt="" />
+        </div>
       }
     </>
   );
