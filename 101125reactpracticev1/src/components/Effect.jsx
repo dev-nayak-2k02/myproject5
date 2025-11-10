@@ -10,6 +10,7 @@ export default function Effect() {
         data = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
         result = await data.json();
         item = result.results[0].id;
+        console.log(result.results[0])
     }
     getFoodData()
   },[query])
