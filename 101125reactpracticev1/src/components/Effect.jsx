@@ -1,5 +1,5 @@
-let URL = "https://api.spoonacular.com/recipes/complexSearch";
-let API_KEY = "ded7bbedd88a4be6b31d943077c0faac";
+let URL = "https://fakestoreapi.com/products";
+// let API_KEY = "ded7bbedd88a4be6b31d943077c0faac";
 import { useEffect, useState } from "react";
 
 export default function Effect({foodData, setFoodData}) {
@@ -8,7 +8,7 @@ export default function Effect({foodData, setFoodData}) {
   const [query, setQuery] = useState("pizza");
   useEffect(() => {
     async function getFoodData() {
-      let data = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`);
+      let data = await fetch(`${URL}`);
       let result = await data.json();
       // setItem(result.results[0].image)
       console.log(result.results[0]);
