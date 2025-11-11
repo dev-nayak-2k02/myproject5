@@ -22,7 +22,10 @@ export default function Search({ item, setItem }) {
       {
         item.map((item)=>(
             <div key={item.id}>
-                <h1>{}</h1>
+                <h1>{item.id}</h1>
+                <h2>{item.title}</h2>
+                <img src={item.image} alt={item.image} />
+                <p>{item.description}</p>
             </div>
         ))
       }
