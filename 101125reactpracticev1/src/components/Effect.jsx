@@ -11,8 +11,8 @@ export default function Effect({foodData, setFoodData}) {
       let data = await fetch(`${URL}`);
       let result = await data.json();
       // setItem(result.results[0].image)
-      console.log(result.id[0]);
-      // setFoodData(result.results);
+      console.log(result);
+      setFoodData(result);
     }
     getFoodData();
   }, [query]);
