@@ -2,7 +2,7 @@ let URL =
   "https://fakestoreapi.com/products?id=integer&title=string&price=number <float>";
 import { useEffect, useState } from "react";
 
-export default function Search() {
+export default function Search({ item, setItem }) {
   const [query, setQuery] = useState("title");
   useEffect(() => {
     async function getItemData() {
