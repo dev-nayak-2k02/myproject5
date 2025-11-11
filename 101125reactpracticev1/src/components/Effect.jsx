@@ -1,4 +1,4 @@
-let URL = "https://fakestoreapi.com/products";
+let URL = "https://fakestoreapi.com/products?id=integer&title=string&price=number <float>";
 // let API_KEY = "ded7bbedd88a4be6b31d943077c0faac";
 import { useEffect, useState } from "react";
 
