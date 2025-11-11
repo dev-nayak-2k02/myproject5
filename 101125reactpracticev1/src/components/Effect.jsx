@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 export default function Effect({foodData, setFoodData}) {
   // const [item,setItem] = useState()
 
-  const [query, setQuery] = useState("pizza");
+  const [query, setQuery] = useState("title");
   useEffect(() => {
     async function getFoodData() {
       let data = await fetch(`${URL}`);
       let result = await data.json();
       // setItem(result.results[0].image)
-      console.log(result.results[0]);
-      setFoodData(result.results);
+      console.log(result.id[0]);
+      // setFoodData(result.results);
     }
     getFoodData();
   }, [query]);
