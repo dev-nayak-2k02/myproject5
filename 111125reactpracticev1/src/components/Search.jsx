@@ -8,7 +8,7 @@ export default function Search() {
     async function getItemData() {
       let data = await fetch(`${URL}`);
       let res = await data.json();
-      console.log(res);
+      console.log(res[0].image);
     }
     getItemData();
   }, [query]);
