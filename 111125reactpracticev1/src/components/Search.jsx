@@ -8,7 +8,7 @@ export default function Search({ item, setItem }) {
     async function getItemData() {
       let data = await fetch(`${URL}`);
       let res = await data.json();
-      console.log(res[0].image);
+      setItem(res);
     }
     getItemData();
   }, [query]);
@@ -19,6 +19,13 @@ export default function Search({ item, setItem }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
+      {
+        item.map((item)=>(
+            <div key={item.id}>
+                <h1>{}</h1>
+            </div>
+        ))
+      }
     </>
   );
 }
