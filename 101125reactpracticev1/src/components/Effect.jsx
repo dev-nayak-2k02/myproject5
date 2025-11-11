@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Effect() {
   // const [item,setItem] = useState()
-  const [foodData, setFoodData] = useState([]);
+
   const [query, setQuery] = useState("pizza");
   useEffect(() => {
     async function getFoodData() {
