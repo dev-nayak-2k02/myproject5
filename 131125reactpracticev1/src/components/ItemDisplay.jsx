@@ -1,10 +1,10 @@
-export default function ItemDisplay({res}){
+export default function ItemDisplay({item}){
     return(
         <>
             <div>
-                <h1>{res.id}</h1>
-                <img src={res.image} alt={res.image} />
-                <p>{res.description}</p>
+                <h1>{item.id}</h1>
+                <img src={item.image} alt={item.image} />
+                <p>{item.description}</p>
             </div>
         </>
     )

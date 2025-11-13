@@ -3,8 +3,8 @@ export default function ItemList({item}){
     return(
         <>
             {
-                item.map((res)=>(
-                    <ItemDisplay key={res.id} res={res}/>
+                item.map((item)=>(
+                    <ItemDisplay key={item.id} res={item}/>
                 ))
             }
         </>
