@@ -1,3 +1,4 @@
+import './Item.css'
 export default function ItemDisplay({item}){
     return(
         <>
