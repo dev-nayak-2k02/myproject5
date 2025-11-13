@@ -1,13 +1,23 @@
+/* Container for all cards */
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* space between cards */
+  justify-items: center;
+  padding: 20px;
+}
+
+/* Individual card styling */
 .card {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    padding: 5px 4px;
-    background: linear-gradient(#e66465, #9198e5);
-    overflow: hidden;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e66465, #9198e5);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 img {
