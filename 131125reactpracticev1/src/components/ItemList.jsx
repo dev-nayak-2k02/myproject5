@@ -4,7 +4,7 @@ export default function ItemList({item}){
         <>
             {
                 item.map((item)=>(
-                    <ItemDisplay key={item.id} res={item}/>
+                    <ItemDisplay key={item.id} item={item}/>
                 ))
             }
         </>
