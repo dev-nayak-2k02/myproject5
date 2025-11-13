@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <Search setItem={setItem}/>
+      <ItemList item={item}/>
     </>
   )
 }
