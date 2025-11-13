@@ -1,0 +1,17 @@
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px 4px;
+}
+
+.image {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
