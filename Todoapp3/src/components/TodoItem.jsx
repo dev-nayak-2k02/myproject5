@@ -1,8 +1,8 @@
 import React from "react";
 
-const TodoItem = ({ item }) => {
+const TodoItem = ({ item, todos, setTodos }) => {
     function handleDelete(item){
-        
+        setTodos(todos.filter(todo => todo != item))
     }
   return (
     <div>
