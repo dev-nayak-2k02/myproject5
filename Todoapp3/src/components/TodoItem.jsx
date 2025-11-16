@@ -1,15 +1,15 @@
 import React from "react";
 
 const TodoItem = ({ item }) => {
-    function handleDelete(){
-        console.log('button clicked');
+    function handleDelete(item){
+        
     }
   return (
     <div>
       <h1>
         {item}
         <span>
-          <button onClick={()=>handleDelete()}>X</button>
+          <button onClick={()=>handleDelete(item)}>X</button>
         </span>
       </h1>
     </div>
