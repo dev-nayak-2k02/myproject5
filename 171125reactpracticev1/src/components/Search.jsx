@@ -9,6 +9,7 @@ const Search = ({setItem}) => {
         let result = await data.json();
         setItem(result);
     }
+    getItemsData()
   },[query])
   return (
     <div>
