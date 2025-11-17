@@ -1,13 +1,13 @@
 let URL = 'https://fakestoreapi.com/products?id=integer&title=string&price=number <float>';
 import React, { useEffect, useState } from "react";
 
-const Search = () => {
+const Search = ({setItem}) => {
   const [query, setQuery] = useState("title");
   useEffect(()=>{
     async function getItemsData() {
         let data = await fetch(`${URL}`);
         let result = await data.json();
-        
+        setItem(result);
     }
   },[query])
   return (
