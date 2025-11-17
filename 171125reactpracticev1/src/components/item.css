@@ -2,14 +2,15 @@
 .item-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px; /* space between cards */
+  gap: 10px; /* space between cards */
   justify-items: center;
   padding: 20px;
+  text-align: center;
 }
 
 /* Individual card styling */
 .card {
-  width: 350px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,4 +19,12 @@
   overflow: hidden;
   border-radius: 10px;
   padding: 10px;
+}
+
+.picture {
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }

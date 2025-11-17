@@ -5,7 +5,7 @@ const ItemDisplay = ({item}) => {
     <div className='card'>
         <h1>{item.id}</h1>
         <h2>{item.title}</h2>
-        <img src={item.image} alt={item.image} />
+        <img src={item.image} alt={item.image} className='picture'/>
         <p>{item.description}</p>
     </div>
   )
