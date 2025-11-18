@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-export default function Counter(){
+export default function Count(){
     const[count,setCount] = useState(0);
     function handleClick(){
         setCount(prev=>prev+1);
