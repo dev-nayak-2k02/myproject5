@@ -5,6 +5,7 @@ function App() {
   return(
     <>
       <Search setFoodItem={setFoodItem}/>
+      <FoodList foodItem={foodItem}/>
     </>
   )
 }
