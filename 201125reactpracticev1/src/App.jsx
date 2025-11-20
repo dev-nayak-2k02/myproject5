@@ -1,10 +1,12 @@
+import { useState } from "react";
 
 function App() {
-    return (
+  const [foodItem, setFoodItem] = useState([]);
+  return(
     <>
-      
+      <Search setFoodItem={setFoodItem}/>
     </>
   )
 }
 
-export default App
+export default App;
