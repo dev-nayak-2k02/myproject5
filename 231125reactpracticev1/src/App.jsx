@@ -4,7 +4,7 @@ function App() {
   const[Item,setItem] = useState([]);
   return (
     <>
-      <Search />
+      <Search setItem={setItem}/>
     </>
   )
 }
