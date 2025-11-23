@@ -1,0 +1,1 @@
+let URL = 'https://fakestoreapi.com/products?id=integer&title=string&price=number <float>';
