@@ -1,4 +1,25 @@
-.nav_color{
-    background-color: red;
-    color: yellow;
+.nav_{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_ ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.image {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
 }
