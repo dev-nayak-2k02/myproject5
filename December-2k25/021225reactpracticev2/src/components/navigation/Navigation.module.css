@@ -1,16 +1,30 @@
-.nav_{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nav_ {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
 }
 
-.nav_ ul{
+.nav_ ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
-    
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 6px 10px;
+    transition: 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.linkStyle:hover {
+    color: rgb(67, 133, 255);
 }
 
 .image {
