@@ -5,11 +5,17 @@
     display: flex;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
 }
 
 .top_btn {
     display: flex;
     gap: 32px;
+}
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact_form {
@@ -31,8 +37,10 @@
 } 
 
 .form_control label {
+    font-size: 14px;
     position: absolute;
     top: -10px;
     left: 18px;
     background-color: white;
+    padding: 0 10px;
 }
