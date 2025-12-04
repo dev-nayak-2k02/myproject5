@@ -8,7 +8,7 @@ const App = () => {
     <>
       <Navigation />
       <ContactHeader />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   )
 }
