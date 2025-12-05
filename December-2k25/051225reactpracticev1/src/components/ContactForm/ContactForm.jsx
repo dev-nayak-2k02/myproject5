@@ -4,6 +4,12 @@ import { MdCall } from "react-icons/md";
 import styles from "./ContactForm.module.css";
 import Button from "../Buttons/Button";
 const ContactForm = () => {
+
+
+    function answer(){
+        console.log('i am clicked')
+    }
+
   return (
     <section className={styles.container}>
       <div className={styles.contact_form}>
@@ -12,6 +18,7 @@ const ContactForm = () => {
           <Button text="VIA CALL CHAT" icon={<MdCall fontSize="24px" />} />
         </div>
         <Button
+            onClick={answer}
           isOutline={true}
           text="VIA CALL CHAT"
           icon={<MdCall fontSize="24px" />}
