@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdMessage } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 import styles from "./ContactForm.module.css";
 import Button from "../Buttons/Button";
 const ContactForm = () => {
-
-
-    function answer(){
-        console.log('i am clicked')
+    const[name, setName] = useState('')
+    const[email, setEmail] = useState('');
+    const[text, setText] = useState('');
+    function onSubmit(e){
+        e.preventDefault();
+        setName(e.target[0].value);
+        setEmail(e.target[1].value);
+        setText(e.target[2].value);
     }
 
   return (
@@ -18,13 +22,12 @@ const ContactForm = () => {
           <Button text="VIA CALL CHAT" icon={<MdCall fontSize="24px" />} />
         </div>
         <Button
-            onClick={answer}
           isOutline={true}
           text="VIA CALL CHAT"
           icon={<MdCall fontSize="24px" />}
         />
 
-        <form>
+        <form onSubmit={onSubmit}>
           <div className={styles.form_control}>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" />
@@ -46,6 +49,7 @@ const ContactForm = () => {
           }}>
             <Button text="submit" />
           </div>
+          {name + " " + email + " " + text}
         </form>
       </div>
       <div className={styles.contact_image}>
