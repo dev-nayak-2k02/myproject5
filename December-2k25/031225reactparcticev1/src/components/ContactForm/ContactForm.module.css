@@ -12,6 +12,7 @@
     display: flex;
     gap: 32px;
 }
+
 .contact_form form {
     display: flex;
     flex-direction: column;
