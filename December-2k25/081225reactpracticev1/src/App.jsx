@@ -4,7 +4,7 @@ import CounterValue from './components/CounterValue'
 const App = () => {
   return (
     <>
-      {/* <Counter /> */}
+      <Counter />
       <CounterValue />
     </>
   )
