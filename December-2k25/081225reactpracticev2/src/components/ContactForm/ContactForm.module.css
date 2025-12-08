@@ -13,3 +13,8 @@
     gap: 24px;
     justify-content: flex-end;
 }
+
+.top_btn {
+    display: flex;
+    gap: 32px;
+}
