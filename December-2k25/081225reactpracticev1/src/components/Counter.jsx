@@ -1,8 +1,14 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 const Counter = () => {
+    const[count,setCount] = useState(0)
+    function countHandler (){
+        setCount(prev=>prev++);
+    }
   return (
-    <div></div>
+    <div>
+        <button onClick={countHandler}>click me</button>
+        {count}
+    </div>
   )
 }
 
