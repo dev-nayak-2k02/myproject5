@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdMessage } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 import styles from "./ContactForm.module.css";
 import Button from "../Buttons/Button";
 const ContactForm = () => {
+    const[name, setName] = useState('')
+    const[email,setEmail] = useState('')
+    const[text, setText] = useState('')
+    function handleSubmit(e){
+        e.preventDefault();
+        setName(e.target[0].value);
+        setEmail(e.target[1].value);
+        setText(e.target[2].value)
+    }
+
   return (
     <section className={styles.container}>
       <div className={styles.contact_form}>
@@ -18,7 +28,7 @@ const ContactForm = () => {
           icon={<MdMessage fontSize="24px" />}
         />
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={styles.form_control}>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" />
@@ -33,14 +43,19 @@ const ContactForm = () => {
             <label htmlFor="text">message</label>
             <textarea rows="8" name="text" />
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Button text="cancel" />
+            <Button text="submit" />
+          </div>
         </form>
-        <div style={{
-            display: 'flex',
-            justifyContent: 'space-between'
-        }}>
-            <Button text='cancel'/>
-            <Button text='submit'/>
-        </div>
+        {name}
+        {email}
+        {text}
       </div>
       <div className={styles.contact_image}>
         <img src="/images/contact.svg" alt="" />
