@@ -5,7 +5,7 @@ import ContactForm from './components/ContactForm/ContactForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='main_container'>
       <Navigation />
       <ContactHeader />
       <ContactForm />

@@ -42,7 +42,9 @@ const ContactForm = () => {
             <Button text='submit'/>
         </div>
       </div>
-      <div className={styles.contact_image}></div>
+      <div className={styles.contact_image}>
+        <img src="/images/contact.svg" alt="" />
+      </div>
     </section>
   );
 };
