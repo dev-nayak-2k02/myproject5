@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import Example from './components/Example'
+import ExampleList from './components/ExampleList'
 const App = () => {
+  const[fn, setFn] = useState([])
   return (
-    <div>App</div>
+    <>
+      <Example setFn={setFn}/>
+      <ExampleList fn = {fn}/>
+    </>
   )
 }
 
