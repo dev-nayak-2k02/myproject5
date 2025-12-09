@@ -52,7 +52,7 @@ function TodoItems({ value, indexNumber, todo, setTodo }) {
         setStats(!stats);
     }
   return (
-    <li className={(stats)? 'completetodo' : ''} onClick={checkStatus}>
+    <li className={(stats) ? 'completetodo' : ''} onClick={checkStatus}>
       {value} <span onClick={deleteRow}>&times;</span>
     </li>
   );
