@@ -1,8 +1,10 @@
 import React from 'react'
-
+import ColorChanger from './components/ColorChanger'
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <ColorChanger/>
+    </div>
   )
 }
 
