@@ -3,7 +3,15 @@ import "./App.css";
 const App = () => {
   let [todo, setTodo] = useState([]);
   let list = todo.map((value, index) => {
-    return <TodoItemList key={index} value={value} />;
+    return (
+      <TodoItemList
+        key={index}
+        value={value}
+        indexNumber={index}
+        todo={todo}
+        setTodo={setTodo}
+      />
+    );
   });
   let handleSubmit = (e) => {
     e.preventDefault();
@@ -32,10 +40,18 @@ const App = () => {
 
 export default App;
 
-function TodoItemList({ value }) {
+function TodoItemList({ value, indexNumber, todo, setTodo }) {
+  let[status,setStatus] = useState(false)
+  let handleDelete = () =>{
+    let finalData = todo.filter((v,i)=>i!=indexNumber)
+    setTodo(finalData);
+  }
+  let handleListOverLine = () =>{
+    setStatus(!status);
+  }
   return (
-    <li>
-      {value} <span>&times;</span>
+    <li className={(status) ? 'completion' : ''} onClick={handleListOverLine}>
+      {indexNumber+1} {value} <span onClick={handleDelete}>&times;</span>
     </li>
   );
 }
