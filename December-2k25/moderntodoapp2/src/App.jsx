@@ -19,6 +19,12 @@ const App = () => {
         <input type="text" name="toname"/>
         <button type="submit">save</button>
       </form>
+
+      <div className="outerDiv">
+        <ul>
+          <li>Html <span>&times;</span></li>
+        </ul>
+      </div>
     </div>
   );
 };
