@@ -1,8 +1,13 @@
 import React from 'react'
+import Navigation from './components/Navigation/Navigation'
+import ContactHeader from './components/ContactHeader/ContactHeader'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Navigation />
+      <ContactHeader />
+    </div>
   )
 }
 
