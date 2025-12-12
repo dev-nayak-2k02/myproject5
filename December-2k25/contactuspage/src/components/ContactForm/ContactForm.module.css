@@ -22,7 +22,7 @@
 .contact_form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
 }
 
 .form_control {
