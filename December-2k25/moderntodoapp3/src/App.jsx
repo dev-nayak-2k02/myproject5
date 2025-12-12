@@ -35,9 +35,13 @@ const App = () => {
 export default App;
 
 function TodoItemList({ value, indexNumber, todo, setTodo }) {
+  let handleDelete = ()=>{
+    let finalList = todo.filter((v,i)=>i != indexNumber)
+    setTodo(finalList)
+  }
   return (
     <li>
-      {value} <span>&times;</span>
+      {indexNumber+1} {value} <span onClick={handleDelete}>&times;</span>
     </li>
   );
 }
