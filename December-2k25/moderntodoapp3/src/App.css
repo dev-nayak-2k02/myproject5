@@ -87,3 +87,9 @@ form button {
   text-align: center;
   bottom: 9px;
 }
+
+.completion {
+  text-decoration: line-through;
+  color: white;
+  background-color: brown !important;
+}

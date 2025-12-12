@@ -4,7 +4,13 @@ const App = () => {
   let [todo, setTodo] = useState([]);
   let list = todo.map((value, index) => {
     return (
-      <TodoItemList key={index} value={value} indexNumber={index} todo={todo} setTodo={setTodo} />
+      <TodoItemList
+        key={index}
+        value={value}
+        indexNumber={index}
+        todo={todo}
+        setTodo={setTodo}
+      />
     );
   });
   function handleSubmit(e) {
@@ -35,13 +41,17 @@ const App = () => {
 export default App;
 
 function TodoItemList({ value, indexNumber, todo, setTodo }) {
-  let handleDelete = ()=>{
-    let finalList = todo.filter((v,i)=>i != indexNumber)
-    setTodo(finalList)
+  let [color, setColor] = useState(false);
+  let handleDelete = () => {
+    let finalList = todo.filter((v, i) => i != indexNumber);
+    setTodo(finalList);
+  };
+  let handleLine = () => {
+    setColor(!color)
   }
   return (
-    <li>
-      {indexNumber+1} {value} <span onClick={handleDelete}>&times;</span>
+    <li className={(color) ? 'completion' : ''} onClick={handleLine}>
+      {indexNumber + 1} {value} <span onClick={handleDelete}>&times;</span>
     </li>
   );
 }
