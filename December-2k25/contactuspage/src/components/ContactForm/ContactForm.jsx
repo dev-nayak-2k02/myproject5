@@ -11,6 +11,7 @@ const ContactForm = () => {
     let[text,setText] = useState('')
     let handleSubmit = (e) =>{
         e.preventDefault();
+        console.log(e)
     }
   return (
     <section className={styles.container}>
