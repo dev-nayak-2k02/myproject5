@@ -40,3 +40,50 @@
 .read-the-docs {
   color: #888;
 }
+
+form {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+form input{
+  flex-basis: 80%;
+  height: 40px;
+  padding: 0px 10px;
+}
+
+form button {
+  flex-basis: 20%;
+}
+
+.outerDiv ul {
+  width: 1170px;
+  padding: 0px;
+  list-style: none;
+  margin: auto;
+}
+
+.outerDiv ul li {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  margin-top: 50px;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.outerDiv ul li span {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  cursor: pointer;
+  background-color: rgb(58, 58, 58);
+  border-radius: 80%;
+  text-align: center;
+  bottom: 9px;
+}

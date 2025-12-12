@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React, { useState } from "react";
+import "./App.css";
+const App = () => {
+  let [todo, setTodo] = useState([]);
+  let list = todo.map((value, index) => {
+    return (
+      <TodoItemList key={index} value={value} indexNumber={index} todo={todo} setTodo={setTodo} />
+    );
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    let toname = e.target.toname.value;
+    if (!todo.includes(toname)) {
+      let finalDoList = [...todo, toname];
+      setTodo(finalDoList);
+    } else {
+      alert(`well well it's already there...${todo}`);
+    }
+  }
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="App">
+      <h1>TODO-LIST</h1>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="toname" />
+        <button type="submit">save</button>
+      </form>
 
-export default App
+      <div className="outerDiv">
+        <ul>{list}</ul>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+function TodoItemList({ value, indexNumber, todo, setTodo }) {
+  return (
+    <li>
+      {value} <span>&times;</span>
+    </li>
+  );
+}
