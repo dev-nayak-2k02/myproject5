@@ -6,13 +6,15 @@ import styles from "./ContactForm.module.css";
 import Button from "../Button/Button";
 import { useState } from "react";
 const ContactForm = () => {
-    let[name,setName] = useState('')
-    let[email,setEmail] = useState('')
-    let[text,setText] = useState('')
-    let handleSubmit = (e) =>{
-        e.preventDefault();
-        console.log(e)
-    }
+  let [name, setName] = useState("");
+  let [email, setEmail] = useState("");
+  let [text, setText] = useState("");
+  function handleSubmit(e) {
+    e.preventDefault();
+    setName(e.target[0].value);
+    setEmail(e.target[1].value);
+    setText(e.target[2].value);
+  }
   return (
     <section className={styles.container}>
       <div className={styles.contact_form}>
@@ -30,23 +32,28 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit}>
           <div className={styles.form_control}>
             <label htmlFor="name">Name</label>
-            <input type="text" name="name"/>
+            <input type="text" name="name" />
           </div>
           <div className={styles.form_control}>
             <label htmlFor="email">Email</label>
-            <input type="email" name="email"/>
+            <input type="email" name="email" />
           </div>
           <div className={styles.form_control}>
             <label htmlFor="text">Text</label>
-            <textarea rows='12' name="text"/>
+            <textarea rows="12" name="text" />
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "end",
+            }}
+          >
+            <Button text="submit" />
+          </div>
+          {name}
+          {email}
+          {text}
         </form>
-        <div style={{
-            display: 'flex',
-            justifyContent: 'end'
-        }}>
-            <Button text='submit' />
-        </div>
       </div>
       <div className={styles.contact_image}>
         <img src="/images/contact.svg" alt="" />
