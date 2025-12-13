@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Child from './Child';
 
 const App = () => {
   let[message, setMessage] = useState('')
@@ -9,7 +10,7 @@ const App = () => {
     <div>
       <h1>Parent Component :</h1>
       <p>Message from child: {message}</p>
-      
+      <Child onSendData={handleDataFromChild}/>
     </div>
   )
 }

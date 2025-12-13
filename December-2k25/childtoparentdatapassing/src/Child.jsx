@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Child = () => {
+const Child = ({ onSendData }) => {
+  function Child() {
+    onSendData('Hello from child');
+  }
   return (
-    <div>Child</div>
-  )
-}
+    <div>
+      <h3>Click to send data to Parent</h3>
+      <button onClick={Child}>click</button>
+    </div>
+  );
+};
 
-export default Child
+export default Child;
