@@ -15,7 +15,7 @@ const Navigation = () => {
             </ul>
         </div>
 
-        <div>
+        <div className={style.right_navigation}>
             <button>INSCRIPTION</button>
         </div>
 
