@@ -21,12 +21,13 @@
 
 .left_navigation ul li {
     font-weight: 500;
+    padding: 5px;
 }
 
 .left_navigation ul li:hover {
-    color: #ff5b5a;
+    color: #fe4646;
     cursor: pointer;
-    font-weight: 700;
+    
 }
 
 .right_navigation {
@@ -37,13 +38,3 @@
     align-items: center;
 }
 
-.right_navigation button {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ff5b5a;
-    border: none;
-    outline: none;
-    font-weight: 700;
-    padding: 10px 30px;
-    cursor: pointer;
-}

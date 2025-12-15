@@ -1,9 +1,10 @@
 import React from 'react'
-import style from './Navigation.module.css'
+import styles from './Navigation.module.css'
+import Button from '../Button/Button'
 const Navigation = () => {
   return (
-    <nav className={`${style.navigation}`}>
-        <div className={style.left_navigation}>
+    <nav className={`${styles.navigation}`}>
+        <div className={styles.left_navigation}>
             <img src="/images/vite.svg" alt="_no_photo_" />
             <ul>
                 <li>Accueil</li>
@@ -15,8 +16,8 @@ const Navigation = () => {
             </ul>
         </div>
 
-        <div className={style.right_navigation}>
-            <button>INSCRIPTION</button>
+        <div className={styles.right_navigation}>
+            <Button text = 'INSCRIPTION'/>
         </div>
 
     </nav>
