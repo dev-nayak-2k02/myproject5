@@ -1,0 +1,20 @@
+.navigation {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+
+.left_navigation{
+    display: flex;
+    gap: 20px;
+    /* #ff5b5a */
+}
+
+.left_navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
