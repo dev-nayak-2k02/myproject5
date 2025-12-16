@@ -3,15 +3,27 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     max-width: 1180px;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    
+
+    .content {
+        h1 {
+            font-size: 96px;
+            white-space: nowrap;
+        }
+    }
 `
 
 const StartGame = () => {
   return (
     <Container>
-        <img src="/images/dices.png" alt="00" />
         <div>
+            <img src="/images/dices.png" alt="00" />
+        </div>
+        <div className='content'>
             <h1>Dice game</h1>
             <Button>Play Now</Button>
         </div>
@@ -24,6 +36,18 @@ export default StartGame
 const Button = styled.button`
   background-color: black;
   color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 10px 18px;
+  min-width: 220px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: 0.3s background ease-in;
+
+  &:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.3s background ease-in;
+    cursor: pointer;
+  }
 `
