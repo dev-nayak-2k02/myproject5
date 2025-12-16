@@ -1,8 +1,11 @@
 import React from 'react'
-
-const SearchListDisplay = () => {
+const SearchListDisplay = ({item}) => {
   return (
-    <div>SearchListDisplay</div>
+    <div>
+        <h1>{item.id}</h1>
+        <img src={item.image} alt={item.image} />
+        <p>{item.title}</p>
+    </div>
   )
 }
 
