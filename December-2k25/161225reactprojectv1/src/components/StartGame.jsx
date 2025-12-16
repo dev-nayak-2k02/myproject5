@@ -1,21 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-  max-width: 1180px;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-
-  .content {
-    h1 {
-      font-size: 96.8px;
-      white-space: nowrap;
-    }
-  }
-`;
-
 const StartGame = ({ toggle }) => {
   return (
     <Container>
@@ -38,6 +23,21 @@ const StartGame = ({ toggle }) => {
 };
 
 export default StartGame;
+
+const Container = styled.div`
+  max-width: 1180px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .content {
+    h1 {
+      font-size: 96.8px;
+      white-space: nowrap;
+    }
+  }
+`;
 
 const Button = styled.button`
   background-color: black;
