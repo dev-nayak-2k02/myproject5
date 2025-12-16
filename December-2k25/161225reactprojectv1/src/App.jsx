@@ -12,9 +12,3 @@ const App = () => {
 
 export default App
 
-const Button = styled.button`
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-`
