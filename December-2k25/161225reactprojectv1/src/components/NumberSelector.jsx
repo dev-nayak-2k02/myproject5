@@ -1,9 +1,28 @@
-import React from 'react'
-
+import React from "react";
+import styled from "styled-components";
 const NumberSelector = () => {
+  let arrNumber = [1, 2, 3, 4, 5, 6];
   return (
-    <div>NumberSelector</div>
-  )
-}
+    <div>
+      {
+        arrNumber.map((value, i) => {
+            return(
+                <Box>{value}</Box>
+            )
+        })
+      }
+    </div>
+  );
+};
 
-export default NumberSelector
+export default NumberSelector;
+
+const Box = styled.div`
+  height: 72px;
+  width: 72px;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  font-weight: 700;
+`;
