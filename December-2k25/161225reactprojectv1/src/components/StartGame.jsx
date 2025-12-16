@@ -11,7 +11,7 @@ const Container = styled.div`
 
     .content {
         h1 {
-            font-size: 96px;
+            font-size: 96.8px;
             white-space: nowrap;
         }
     }
@@ -25,7 +25,12 @@ const StartGame = () => {
         </div>
         <div className='content'>
             <h1>Dice game</h1>
-            <Button>Play Now</Button>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'end'
+            }}>
+                <Button>Play Now</Button>
+            </div>
         </div>
     </Container>
   )
@@ -41,7 +46,7 @@ const Button = styled.button`
   border-radius: 5px;
   font-size: 16px;
   border: 1px solid transparent;
-  transition: 0.3s background ease-in;
+  transition: 0.4s background ease-in;
 
   &:hover {
     background-color: white;
