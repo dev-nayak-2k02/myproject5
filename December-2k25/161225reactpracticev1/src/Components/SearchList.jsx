@@ -1,8 +1,15 @@
 import React from 'react'
+import SearchListDisplay from './SearchListDisplay'
 
-const SearchList = () => {
+const SearchList = ({ items }) => {
   return (
-    <div>SearchList</div>
+    <div>
+        {
+            items.map((item) => (
+                <SearchListDisplay key={item.id} item={item}/>
+            ))
+        }
+    </div>
   )
 }
 
