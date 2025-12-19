@@ -28,6 +28,6 @@ const Box = styled.div`
   place-items: center;
   font-size: 24px;
   font-weight: 700;
-  background-color: ${value => value ? 'black' : 'white'};
-  color: ${value => value ? 'white' : 'black'};
+  background-color: ${(value) => value.isSelected ? 'black' : 'white'};
+  color: ${(value) => value.isSelected ? 'white' : 'black'};
 `;
