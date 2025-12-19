@@ -1,16 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
+import StartGame from './components/StartGame'
 const App = () => {
   return (
-    <Button>
-      click to see me
-    </Button>
+    <StartGame />
   )
 }
 
 export default App
-
-const Button = styled.button`
-  background-color: black;
-  color: white;
-`
