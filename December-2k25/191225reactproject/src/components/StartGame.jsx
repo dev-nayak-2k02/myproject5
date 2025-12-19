@@ -8,7 +8,12 @@ const StartGame = () => {
         </div>
         <div className='content'>
             <h1>DICE GAME</h1>
-            <Button>Click me</Button>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'end',
+            }}>
+                <Button>Click me</Button>
+            </div>
         </div>
     </Container>
   )
@@ -28,8 +33,6 @@ const Container = styled.div`
             font-size: 96px;
             white-space: nowrap;
         }
-
-
     }
 `
 
@@ -39,4 +42,15 @@ const Button = styled.button`
     border-radius: 5px;
     color: white;
     background-color: #000000;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: 0.4s background ease-in;
+
+    &:hover {
+        background-color: white;
+        color: #000000;
+        border: 1px solid black;
+        transition: 0.3s background ease-in;
+        cursor: pointer;
+    }
 `
