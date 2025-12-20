@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const StartGame = () => {
+const StartGame = ({ isToggle }) => {
   return (
     <Container>
         <div>
@@ -12,7 +12,7 @@ const StartGame = () => {
                 display: 'flex',
                 justifyContent: 'end'
             }}>
-                <Button>Click me</Button>
+                <Button onClick={isToggle}>Click me</Button>
             </div>
         </div>
     </Container>
