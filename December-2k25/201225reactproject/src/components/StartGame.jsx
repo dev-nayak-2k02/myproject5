@@ -38,6 +38,7 @@ const Container = styled.div`
 
 const Button = styled.button`
     width: 220px;
+    font-size: 16px;
     padding: 10px 18px;
     background-color: black;
     color: white;
@@ -50,5 +51,6 @@ const Button = styled.button`
         color: black;
         border: 1px solid black;
         transition: 0.3s background ease;
+        cursor: pointer;
     }
 `
