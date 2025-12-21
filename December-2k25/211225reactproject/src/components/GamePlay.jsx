@@ -4,7 +4,7 @@ const GamePlay = () => {
     
   return (
     <div>
-        gameplay
+        
     </div>
   )
 }
