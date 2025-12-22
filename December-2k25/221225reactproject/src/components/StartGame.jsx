@@ -50,5 +50,6 @@ const Button = styled.button`
         color: black;
         border: 1px solid black;
         transition: 0.3s background ease;
+        cursor: pointer;
     }
 `
