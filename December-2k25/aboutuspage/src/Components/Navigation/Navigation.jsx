@@ -19,7 +19,6 @@ const Navigation = () => {
         <div className={styles.right_navigation}>
             <Button text = 'INSCRIPTION'/>
         </div>
-
     </nav>
   )
 }
