@@ -3,10 +3,10 @@ import TotalScore from './TotalScore'
 import NumberSelector from './NumberSelector'
 const GamePlay = () => {
   return (
-    <div>
+    <main>
         <TotalScore/>
         <NumberSelector/>
-    </div>
+    </main>
   )
 }
 
