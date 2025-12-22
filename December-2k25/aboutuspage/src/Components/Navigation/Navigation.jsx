@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav className={`${styles.navigation}`}>
         <div className={styles.left_navigation}>
-            <img src="/images/vite.svg" alt="_no_photo_" />
+            <img style={{marginLeft: '30px'}} src="/images/vite.svg" alt="_no_photo_" />
             <ul>
                 <li>Accueil</li>
                 <li>Agenda</li>
