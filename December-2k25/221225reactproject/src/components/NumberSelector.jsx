@@ -24,16 +24,20 @@ const NumberSelector = () => {
 export default NumberSelector;
 
 const NumberSelectorContainer = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   .flex {
     display: flex;
     gap: 24px;
   }
 
   p {
+    padding-top: 20px;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
   }
+
 `;
 
 const Box = styled.div`
