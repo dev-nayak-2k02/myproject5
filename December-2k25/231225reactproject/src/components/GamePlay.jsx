@@ -20,7 +20,6 @@ const GamePlay = () => {
       setError("No number is being selected");
       return;
     }
-
     setRoleDice((prev) => random);
 
     if (selectedNumber == random) {
@@ -38,6 +37,7 @@ const GamePlay = () => {
         <TotalScore score={score} />
         <NumberSelector
           error={error}
+          setError={setError}
           selectedNumber={selectedNumber}
           setSelectedNumber={setSelectedNumber}
         />
