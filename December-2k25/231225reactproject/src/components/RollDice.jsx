@@ -20,6 +20,10 @@ const DiceContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  .dice {
+    cursor: pointer;
+  }
+
   p {
     font-size: 20px;
     font-weight: 500;
