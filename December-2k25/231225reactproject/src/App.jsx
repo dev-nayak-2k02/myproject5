@@ -1,12 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import StartGame from './components/StartGame'
+import React, { useState } from "react";
+import styled from "styled-components";
+import StartGame from "./components/StartGame";
+import GamePlay from "./components/GamePlay";
 const App = () => {
+  let [isGameStarted, setIsGameStarted] = useState(false);
+  const ToggleGameplay = () => {
+    setIsGameStarted((prev) => !isGameStarted);
+  };
   return (
     <div>
-      <StartGame />
+      {isGameStarted ? <GamePlay /> : <StartGame isToggle={ToggleGameplay} />}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
