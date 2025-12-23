@@ -7,7 +7,8 @@ import RollDice from "./RollDice";
 const GamePlay = () => {
   const [selectedNumber, setSelectedNumber] = useState();
   let [roleDice, setRoleDice] = useState(1);
-  let[score, setScore] = useState(0)
+  let [score, setScore] = useState(0);
+  let [error, setError] = useState();
 
   const randomNumberGenerator = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
@@ -15,20 +16,28 @@ const GamePlay = () => {
 
   const rollDice = () => {
     let random = randomNumberGenerator(1, 7);
-    setRoleDice((prev) => random);
-  };
+    if (!selectedNumber) {
+      setError("No number is being selected");
+      return;
+    }
 
-  if(selectedNumber == random){
-    setScore(prev => prev + random)
-  } else {
-    setScore(prev => prev - 2)
-  }
+    setRoleDice((prev) => random);
+
+    if (selectedNumber == random) {
+      setScore((prev) => prev + random);
+    } else {
+      setScore((prev) => prev - 2);
+    }
+
+    setSelectedNumber(undefined);
+  };
 
   return (
     <MainContainer>
       <div className="top_section">
-        <TotalScore score={score} setScore={setScore} />
+        <TotalScore score={score} />
         <NumberSelector
+          error={error}
           selectedNumber={selectedNumber}
           setSelectedNumber={setSelectedNumber}
         />
