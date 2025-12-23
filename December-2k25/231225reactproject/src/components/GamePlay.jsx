@@ -6,7 +6,7 @@ const GamePlay = () => {
   return (
     <div>
         <TotalScore />
-        
+        <NumberSelector />
     </div>
   )
 }
