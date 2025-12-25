@@ -2,7 +2,9 @@ import React from 'react'
 
 const GamePlay = () => {
   return (
-    <div>GamePlay</div>
+    <div>
+        
+    </div>
   )
 }
 
