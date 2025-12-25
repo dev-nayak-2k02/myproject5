@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-const NumberSelector = ({ isColor, setIsColor }) => {
+const NumberSelector = ({ isColor, setIsColor, error, setError }) => {
   const arrNumber = [1, 2, 3, 4, 5, 6];
+
+  const errorHandler = (value) => {
+    setIsColor(value)
+    setError('')
+  }
   return (
     <NumberSelectorContainer>
+      <p className="error">{error}</p>
       <div className="flex">
         {arrNumber.map((value, index) => (
           <Box
             isValue={value == isColor}
-            onClick={() => {
-              setIsColor(value);
-            }}
+            onClick={() => errorHandler(value)}
             key={index}
           >
             {value}
