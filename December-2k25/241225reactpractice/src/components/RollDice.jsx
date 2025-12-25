@@ -1,16 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-const RollDice = () => {
-  const [roleDice, setRoleDice] = useState(1);
-
-  const randomNumberGenerator = (min, max) => {
-    return Math.floor(Math.random() * (max - min) + min);
-  };
-
-  const rollDice = () => {
-    let randomNumber = randomNumberGenerator(1, 7);
-    setRoleDice(prev => randomNumber)
-  }
+const RollDice = ({roleDice, rollDice}) => {
+  
   return (
     <DiceContainer>
       <div className="dice" onClick={rollDice}>
