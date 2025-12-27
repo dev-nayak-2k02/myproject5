@@ -14,7 +14,10 @@ const GamePlay = () => {
   };
 
   const rollDice = () => {
-    if(!boxSelector) return
+    if(!boxSelector) {
+      setError('select a number first')
+      return
+    }
 
     let randomumber = randomNumberGenerator(1, 7);
     setDiceNumber((prev) => randomumber);
@@ -23,6 +26,8 @@ const GamePlay = () => {
     } else {
       setScore(prev => prev - 2)
     }
+    
+    setBoxSelector(undefined)
   };
   return (
     <MainContainer>
@@ -31,6 +36,8 @@ const GamePlay = () => {
         <NumberSelector
           boxSelector={boxSelector}
           setBoxSelector={setBoxSelector}
+          error={error}
+          setError={setError}
         />
       </div>
       <RollDice diceNumber={diceNumber} rollDice={rollDice} />
