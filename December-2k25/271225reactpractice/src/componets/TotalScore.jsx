@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const TotalScore = () => {
+const TotalScore = ({ score, setScore }) => {
   return (
     <ScoreContainer>
       <h1>0</h1>
