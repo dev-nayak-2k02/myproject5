@@ -7,12 +7,15 @@ const GamePlay = () => {
   const [diceNumber, setDiceNumber] = useState(1);
   const [boxSelector, setBoxSelector] = useState();
   const [score, setScore] = useState(0)
+  const [error, setError] = useState('')
 
   const randomNumberGenerator = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
   };
 
   const rollDice = () => {
+    if(!boxSelector) return
+
     let randomumber = randomNumberGenerator(1, 7);
     setDiceNumber((prev) => randomumber);
     if(randomumber == boxSelector){
@@ -24,7 +27,7 @@ const GamePlay = () => {
   return (
     <MainContainer>
       <div className="top_section">
-        <TotalScore score={score} setScore={setScore}/>
+        <TotalScore score={score}/>
         <NumberSelector
           boxSelector={boxSelector}
           setBoxSelector={setBoxSelector}
