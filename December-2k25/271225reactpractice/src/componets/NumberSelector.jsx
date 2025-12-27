@@ -1,20 +1,24 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, { useState } from "react";
+import styled from "styled-components";
 const NumberSelector = () => {
   let arrNumber = [1, 2, 3, 4, 5, 6];
-  const[boxSelector, setBoxSelector] = useState()
+  const [boxSelector, setBoxSelector] = useState();
   return (
     <div>
-      {
-        arrNumber.map((value, index) =>(
-          <Box>{value}</Box>
-        ))
-      }
+      {arrNumber.map((value, index) => (
+        <Box
+          isValue={value == boxSelector}
+          key={index}
+          onClick={() => setBoxSelector(value)}
+        >
+          {value}
+        </Box>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default NumberSelector
+export default NumberSelector;
 
 const Box = styled.div`
   height: 72px;
@@ -23,4 +27,6 @@ const Box = styled.div`
   font-weight: 700;
   display: grid;
   place-items: center;
-`
+  background-color: ${(props) => props.isValue ? 'black' : 'white'};
+  color: ${(props) => !props.isValue ? 'black' : 'white'};
+`;
