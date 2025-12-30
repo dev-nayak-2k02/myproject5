@@ -29,6 +29,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: end;
+
         h1{
             font-size: 96px;
             white-space: nowrap;
@@ -43,4 +44,6 @@ const Button = styled.button`
     width: 220px;
     border-radius: 5px;
     font-size: 16px;
+
+    
 `
