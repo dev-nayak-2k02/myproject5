@@ -2,25 +2,38 @@ import React from 'react'
 import styled from 'styled-components'
 const StartGame = () => {
   return (
-    <MainContainer>
+    <Container>
         <div>
             <img src="/images/dices.png" alt="" />
         </div>
-        <div className='flex'>
+        <div className='content'>
             <h1>DICE GAME</h1>
-            
+            <div className='content-btn'>
+                <Button>click me</Button>
+            </div>
         </div>
-    </MainContainer>
+    </Container>
   )
 }
 
 export default StartGame
 
-const MainContainer = styled.div`
+const Container = styled.div`
     max-width: 1180px;
     height: 100vh;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        h1{
+            font-size: 96px;
+            white-space: nowrap;
+        }
+    }
 `
 
 const Button = styled.button`
@@ -29,4 +42,5 @@ const Button = styled.button`
     padding: 10px 18px;
     width: 220px;
     border-radius: 5px;
+    font-size: 16px;
 `
