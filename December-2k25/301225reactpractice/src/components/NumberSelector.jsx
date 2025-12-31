@@ -5,9 +5,9 @@ const NumberSelector = () => {
   return (
     <div>
         {
-            arrNumber.map((value, index) => {
+            arrNumber.map((value, index) => (
                 <Box key={index}>{value}</Box>
-            })
+            ))
         }
     </div>
   )
