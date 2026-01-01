@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 const RollDice = () => {
-  const [rollDice, setRollDice] = useState(0);
+  const [rollDice, setRollDice] = useState(1);
 
   const generteRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);

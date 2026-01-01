@@ -49,6 +49,7 @@ const NumberSelectorContainer = styled.div`
 
   .flex {
     display: flex;
+    gap: 24px;
   }
 `;
 
