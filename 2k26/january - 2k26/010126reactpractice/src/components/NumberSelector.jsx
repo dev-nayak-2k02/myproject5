@@ -7,21 +7,50 @@ const NumberSelector = () => {
     setNumberSelector((prev) => value);
   };
   return (
-    <div>
-      {arrNumber.map((value, index) => (
-        <Box
-          isValue={value == numberSelector}
-          onClick={() => setColor(value)}
-          key={index}
-        >
-          {value}
-        </Box>
-      ))}
-    </div>
+    <NumberSelectorContainer>
+      <div className="flex">
+        {arrNumber.map((value, index) => (
+          <Box
+            isValue={value == numberSelector}
+            onClick={() => setColor(value)}
+            key={index}
+          >
+            {value}
+          </Box>
+        ))}
+      </div>
+      <p>Select Number</p>
+    </NumberSelectorContainer>
   );
 };
 
 export default NumberSelector;
+
+const NumberSelectorContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+
+  .error {
+    color: red;
+    font-size: 16px;
+    font-weight: 500;
+
+    span {
+      color: white;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .flex {
+    display: flex;
+  }
+`;
 
 const Box = styled.div`
   height: 72px;
@@ -30,6 +59,6 @@ const Box = styled.div`
   display: grid;
   place-items: center;
   font-weight: 700;
-  background-color: ${(props) => (props.isValue? 'black' : 'white')};
-  color: ${(props) => (!props.isValue? 'black' : 'white')};
+  background-color: ${(props) => (props.isValue ? "black" : "white")};
+  color: ${(props) => (!props.isValue ? "black" : "white")};
 `;

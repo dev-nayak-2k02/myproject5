@@ -4,11 +4,21 @@ import TotalScore from './TotalScore'
 import NumberSelector from './NumberSelector'
 const GamePlay = () => {
   return (
-    <div>
-        <TotalScore />
+    <MainContainer>
+        <div className='top_section'>
+          <TotalScore />
         <NumberSelector />
-    </div>
+        </div>
+    </MainContainer>
   )
 }
 
 export default GamePlay
+
+const MainContainer = styled.div`
+  padding-top: 70px;
+  .top_section {
+    display: flex;
+    justify-content: space-around;
+  }
+`
