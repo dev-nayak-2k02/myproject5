@@ -29,7 +29,7 @@ const ButtonContainer = styled.div`
 const Button = styled.button`
   background-color: black;
   color: white;
-  padding: 10px 18px;
+  padding: 2px 8px;
   width: 150px;
   border-radius: 5px;
   border: 1px solid transparent;
