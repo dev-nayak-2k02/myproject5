@@ -3,6 +3,7 @@ import styled from "styled-components";
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
+import GameButtons from "./GameButtons";
 const GamePlay = () => {
   const [rollDice, setRollDice] = useState(1);
   const [numberSelector, setNumberSelector] = useState();
@@ -43,6 +44,7 @@ const GamePlay = () => {
         />
       </div>
       <RollDice rollDice={rollDice} diceRoll={diceRoll} />
+      <GameButtons />
     </MainContainer>
   );
 };
