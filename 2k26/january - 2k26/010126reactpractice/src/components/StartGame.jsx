@@ -24,7 +24,7 @@ const Container = styled.div`
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 5.7px;
+    gap: 5.6px;
 
     .content {
         h1 {
