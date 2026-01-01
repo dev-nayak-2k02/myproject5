@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-const NumberSelector = () => {
+const NumberSelector = ({ numberSelector, setNumberSelector }) => {
   const arrNumber = [1, 2, 3, 4, 5, 6];
-  
+
   const setColor = (value) => {
     setNumberSelector((prev) => value);
   };

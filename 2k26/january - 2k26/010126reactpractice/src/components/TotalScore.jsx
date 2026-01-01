@@ -1,29 +1,29 @@
-import React from 'react'
-import styled from 'styled-components'
-const TotalScore = () => {
+import React from "react";
+import styled from "styled-components";
+const TotalScore = ({ score, setScore }) => {
   return (
     <StoreContainer>
-        <h1>0</h1>
-        <p>Total Score</p>
+      <h1>0</h1>
+      <p>Total Score</p>
     </StoreContainer>
-  )
-}
+  );
+};
 
-export default TotalScore
+export default TotalScore;
 
 const StoreContainer = styled.div`
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h1{
-        font-size: 100px;
-        line-height: 100px;
-    }
+  h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
 
-    p{
-        font-size: 24px;
-        font-weight: 500;
-    }
-`
+  p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+`;
