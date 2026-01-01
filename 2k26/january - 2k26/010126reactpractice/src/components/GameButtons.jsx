@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-const GameButtons = () => {
+const GameButtons = ({setScore, setError, setNumberSelector, setRollDice}) => {
     
+    const resetFunction = () =>{
+        setScore(0)
+        setError('')
+        setNumberSelector(undefined)
+        setRollDice(1)
+    }
   return (
     <ButtonContainer>
-        <Button>reset</Button>
+        <Button onClick={resetFunction}>reset</Button>
+        <Button>rules</Button>
     </ButtonContainer>
   )
 }
@@ -16,6 +23,7 @@ const ButtonContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    gap: 10px;
 `
 
 const Button = styled.button`
