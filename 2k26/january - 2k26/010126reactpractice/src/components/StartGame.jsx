@@ -27,6 +27,9 @@ const Container = styled.div`
     gap: 5.6px;
 
     .content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
         h1 {
             font-size: 96px;
             font-weight: 700;
@@ -41,4 +44,14 @@ const Button = styled.button`
   padding: 10px 18px;
   width: 200px;
   border-radius: 5px;
+  border: 1px solid transparent;
+  transition: 0.4s background ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s background ease;
+  }
 `
