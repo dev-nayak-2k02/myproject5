@@ -1,19 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
-import TotalScore from './TotalScore'
-import NumberSelector from './NumberSelector'
+import React from "react";
+import styled from "styled-components";
+import TotalScore from "./TotalScore";
+import NumberSelector from "./NumberSelector";
+import RollDice from "./RollDice";
 const GamePlay = () => {
   return (
     <MainContainer>
-        <div className='top_section'>
-          <TotalScore />
+      <div className="top_section">
+        <TotalScore />
         <NumberSelector />
-        </div>
+      </div>
+      <RollDice />
     </MainContainer>
-  )
-}
+  );
+};
 
-export default GamePlay
+export default GamePlay;
 
 const MainContainer = styled.div`
   padding-top: 70px;
@@ -21,4 +23,4 @@ const MainContainer = styled.div`
     display: flex;
     justify-content: space-around;
   }
-`
+`;
