@@ -4,6 +4,17 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
 const GamePlay = () => {
+  const [rollDice, setRollDice] = useState(1);
+
+  const generteRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+
+  const diceRoll = ()=>{
+    let random = generteRandomNumber(1, 7);
+    setRollDice(prev => random)
+  }
+  
   return (
     <MainContainer>
       <div className="top_section">
