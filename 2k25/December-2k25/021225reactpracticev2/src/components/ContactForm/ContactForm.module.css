@@ -1,0 +1,10 @@
+.container {
+    max-width: 1032px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.top_btn {
+    display: flex;
+    gap: 32px;
+}

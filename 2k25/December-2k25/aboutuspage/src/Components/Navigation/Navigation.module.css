@@ -1,0 +1,41 @@
+.navigation {
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+    backdrop-filter: blur(10px);
+}
+
+.left_navigation{
+    display: flex;
+    gap: 20px;
+    /* #ff5b5a */
+}
+
+.left_navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.left_navigation ul li {
+    font-weight: 500;
+    padding: 5px;
+}
+
+.left_navigation ul li:hover {
+    color: #fe4646;
+    cursor: pointer;
+    
+}
+
+.right_navigation {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
