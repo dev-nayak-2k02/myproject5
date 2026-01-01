@@ -25,14 +25,13 @@ const GamePlay = () => {
   return (
     <MainContainer>
       <div className="top_section">
-        <TotalScore />
+        <TotalScore score={score} />
         <NumberSelector
           numberSelector={numberSelector}
           setNumberSelector={setNumberSelector}
         />
       </div>
       <RollDice rollDice={rollDice} diceRoll={diceRoll} />
-      <TotalScore score={score} setScore={setScore} />
     </MainContainer>
   );
 };
