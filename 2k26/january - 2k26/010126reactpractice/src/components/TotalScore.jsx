@@ -13,7 +13,6 @@ export default TotalScore
 
 const StoreContainer = styled.div`
     width: 200px;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
