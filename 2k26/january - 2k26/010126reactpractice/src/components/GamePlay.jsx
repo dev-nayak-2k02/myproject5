@@ -4,6 +4,7 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import RollDice from "./RollDice";
 import GameButtons from "./GameButtons";
+import Rules from "./Rules";
 const GamePlay = () => {
   const [rollDice, setRollDice] = useState(1);
   const [numberSelector, setNumberSelector] = useState();
@@ -50,6 +51,7 @@ const GamePlay = () => {
         setNumberSelector={setNumberSelector}
         setRollDice={setRollDice}
       />
+      <Rules />
     </MainContainer>
   );
 };

@@ -30,7 +30,8 @@ const Button = styled.button`
   background-color: black;
   color: white;
   padding: 2px 8px;
-  width: 150px;
+  font-size: 20px;
+  width: 200px;
   border-radius: 5px;
   border: 1px solid transparent;
   transition: 0.4s background ease;
