@@ -34,6 +34,7 @@ const Container = styled.div`
         }
     }
 `
+
 const Button = styled.button`
     width: 200px;
     padding: 10px 18px;
