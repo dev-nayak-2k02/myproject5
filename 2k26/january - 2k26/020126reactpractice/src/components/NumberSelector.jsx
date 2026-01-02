@@ -16,7 +16,9 @@ const NumberSelector = () => {
           </Box>
         ))}
       </div>
-      <p>Select Number</p>
+      <div className="right">
+        <p>Select Number</p>
+      </div>
     </NumberSelectorContainer>
   );
 };
@@ -26,6 +28,7 @@ export default NumberSelector;
 const NumberSelectorContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: end;
 
     p {
         font-size: 24px;
