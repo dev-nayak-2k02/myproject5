@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
@@ -7,6 +7,8 @@ import RollDice from "./RollDice";
 const GamePlay = () => {
   const [numberSelect, setNumberSelect] = useState();
   const [rollDice, setRollDice] = useState(1);
+  const [score, setScore] = useState(0);
+
   const randomNumberGenerator = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
   };
@@ -14,13 +16,17 @@ const GamePlay = () => {
     let random = randomNumberGenerator(1, 7);
     setRollDice((prev) => random);
   };
+
   return (
     <MainContainer>
       <div className="top-section">
-        <TotalScore />
-        <NumberSelector />
+        <TotalScore score={score} setScore={setScore} />
+        <NumberSelector
+          numberSelect={numberSelect}
+          setNumberSelect={setNumberSelect}
+        />
       </div>
-      <RollDice />
+      <RollDice rollDice={rollDice} handleDiceRoll={handleDiceRoll} />
     </MainContainer>
   );
 };
