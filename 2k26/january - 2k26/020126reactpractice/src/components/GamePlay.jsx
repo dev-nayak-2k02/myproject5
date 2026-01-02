@@ -20,7 +20,7 @@ const GamePlay = () => {
   return (
     <MainContainer>
       <div className="top-section">
-        <TotalScore score={score} setScore={setScore} />
+        <TotalScore score={score} />
         <NumberSelector
           numberSelect={numberSelect}
           setNumberSelect={setNumberSelect}
