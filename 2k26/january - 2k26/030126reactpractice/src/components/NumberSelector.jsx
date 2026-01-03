@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 const NumberSelector = () => {
   const arrNumber = [1, 2, 3, 4, 5, 6];
-  const [numberSelect, setNumberSelect] = useState();
+  
   return (
     <NumberSelectContainer>
       <div className="flex">
