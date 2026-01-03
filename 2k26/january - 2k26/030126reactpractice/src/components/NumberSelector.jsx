@@ -14,6 +14,7 @@ const NumberSelector = () => {
           {value}
         </Box>
       ))}
+      <p>Select Number</p>
     </div>
   );
 };
@@ -27,6 +28,7 @@ const Box = styled.div`
   border: 1px solid black;
   display: grid;
   place-items: center;
+  cursor: pointer;
   background-color: ${(props)=> (props.isValue ? 'black' : 'white')};
   color: ${(props)=> (!props.isValue ? 'black' : 'white')};
 `;
