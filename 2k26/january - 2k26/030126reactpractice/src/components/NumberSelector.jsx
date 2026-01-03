@@ -26,6 +26,13 @@ export default NumberSelector;
 const NumberSelectContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+    }
 
     .flex {
         display: flex;
