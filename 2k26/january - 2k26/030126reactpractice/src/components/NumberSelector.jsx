@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-const NumberSelector = () => {
+const NumberSelector = ({ numberSelect, setNumberSelect }) => {
   const arrNumber = [1, 2, 3, 4, 5, 6];
-  
+
   return (
     <NumberSelectContainer>
       <div className="flex">
@@ -24,21 +24,21 @@ const NumberSelector = () => {
 export default NumberSelector;
 
 const NumberSelectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .flex {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-
-    p {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .flex {
-        display: flex;
-        gap: 24px;
-    }
-`
+    gap: 24px;
+  }
+`;
 
 const Box = styled.div`
   width: 72px;

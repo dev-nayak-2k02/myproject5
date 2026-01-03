@@ -14,6 +14,12 @@ const GamePlay = () => {
 
   const handleDice = ()=>{
     let random = randomNumberGenerator(1, 7)
+
+    if(random == rollDice){
+      setScore((prev) => prev + random)
+    } else {
+      setScore((prev) => prev - 2)
+    }
     setRollDice(prev => random)
   }
   return (
