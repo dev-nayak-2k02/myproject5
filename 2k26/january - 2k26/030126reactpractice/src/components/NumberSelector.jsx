@@ -1,9 +1,20 @@
 import React from 'react'
-
+import styled from 'styled-components'
 const NumberSelector = () => {
   return (
-    <div>NumberSelector</div>
+    <div>
+        <Box>1</Box>
+    </div>
   )
 }
 
 export default NumberSelector
+
+const Box = styled.div`
+    width: 72px;
+    height: 72px;
+    font-weight: 700;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+`
