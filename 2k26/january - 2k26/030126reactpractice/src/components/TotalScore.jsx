@@ -13,5 +13,17 @@ export default TotalScore
 
 const ScoreContainer = styled.div`
     width: 200px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 500;
+    }
 `
