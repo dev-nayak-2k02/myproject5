@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-App</title>
+  </head>
+  <body>
+    <h1>Todo-App</h1>
+    <div class="wrapper">
+      <form>
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="write nything and hit enter to add"
+          autocomplete="off"
+        />
+        <button id="add-button">Add</button>
+      </form>
+      <ul id="todo-list">
+        <li class="todo">
+            <input type="checkbox" id="todo-1">
+            <label class="custom-checkbox" for="todo-1">
+                <img src="./icons/check.svg" alt="">
+            </label>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
