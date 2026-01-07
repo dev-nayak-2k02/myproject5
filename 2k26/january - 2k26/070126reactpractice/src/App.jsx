@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const App = () => {
   return (
     <div>
-      <Button></Button>
+      <Button>click me</Button>
     </div>
   )
 }
@@ -15,4 +15,7 @@ const Button = styled.button`
   color: white;
   width: 200px;
   padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 `
