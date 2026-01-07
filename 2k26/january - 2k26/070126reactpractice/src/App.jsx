@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import StartGame from './components/StartGame'
+import GamePlay from './components/GamePlay'
 const App = () => {
+  const [startHandler, setStartHandler] = useState(false)
+  const toggleFunction =()=>{
+    setStartHandler((prev) => !prev)
+  }
   return (
     <div>
-      <Button>click me</Button>
+      {
+        startHandler ? <GamePlay/> : <StartGame isToggle={toggleFunction}/>
+      }
     </div>
   )
 }
