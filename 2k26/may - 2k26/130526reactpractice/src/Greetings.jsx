@@ -1,8 +1,8 @@
 import React from "react";
-function Greetings(){
+export default function Greetings(){
     return(
         <>
-            <p>hello there I'm Dev</p>
+            hello there I'm Dev
         </>
     )
 }
@@ -13,4 +13,4 @@ function Welcome(){
         </>
     )
 }
-export {Greetings, Welcome}
+export {Welcome}
