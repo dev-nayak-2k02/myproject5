@@ -1,14 +1,12 @@
 import React from "react";
-import { useState } from "react";
-function App() {
-  const[num,setNum] = useState(0)
-  return (
+import { Greetings } from "./Greetings";
+function App(){
+  return(
     <>
-      <h1>GeeCoding</h1>
-      <p>this is {num}</p>
-      <button onClick={()=>setNum(num+1)}>click me</button>
+      <h1>hello there,</h1>
+      <p>myself Dev and I'm revising React to get better at it</p>
+      <Greetings/>
     </>
   )
 }
-
 export default App
