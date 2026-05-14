@@ -1,6 +1,7 @@
 import React from "react"
 import './App.css'
 import { Exampler, Greetings, Welcome } from "./Exampler";
+import Student from "./Student";
 export default function App(){
   let name = 'Dev Nayak';
   let age = 23;
@@ -18,6 +19,7 @@ export default function App(){
         <li>{gender}</li>
         <li>{isVoting}</li>
       </ul>
+      <Student name='dev Nayak' age={23}/>
     </div>
   )
 }
