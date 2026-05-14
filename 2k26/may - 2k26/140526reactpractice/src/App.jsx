@@ -2,13 +2,21 @@ import React from "react"
 import './App.css'
 import { Exampler, Greetings, Welcome } from "./Exampler";
 export default function App(){
+  let name = 'Dev Nayak';
+  let age = 23;
+  let gender = 'Male';
+  let isVoting = 'Eligible'
   return(
     <div>
       <h1>Dev Prasanna Nayak</h1>
       <ul>
-        <li><Greetings/></li>
-        <li><Welcome/></li>
-        <li><Exampler/></li>
+        <li className="list-items"><Greetings/></li>
+        <li className="list-items"><Welcome/></li>
+        <li className="list-items"><Exampler/></li>
+        <li>{name}</li>
+        <li>{age}</li>
+        <li>{gender}</li>
+        <li>{isVoting}</li>
       </ul>
     </div>
   )

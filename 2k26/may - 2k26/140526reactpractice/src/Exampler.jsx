@@ -2,7 +2,7 @@ import React from "react";
 let Exampler = ()=>{
     return(
         <>
-            <p>This is exampler function declared in another form</p>
+            <span>This is exampler function declared in another form</span>
         </>
     )
 }
@@ -10,7 +10,7 @@ let Exampler = ()=>{
 function Greetings(){
     return(
         <>
-            <p>Hey there, I'm Dev building a react project.</p>
+            <span>Hey there, I'm Dev building a react project.</span>
         </>
     )
 }
@@ -18,7 +18,7 @@ function Greetings(){
 function Welcome(){
     return(
         <>
-            <p>Welcome folks, this is me building a website.</p>
+            <span>Welcome folks, this is me building a website.</span>
         </>
     )
 }
