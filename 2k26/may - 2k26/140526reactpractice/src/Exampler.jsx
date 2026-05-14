@@ -22,3 +22,5 @@ function Welcome(){
         </>
     )
 }
+
+export {Exampler, Greetings, Welcome}
