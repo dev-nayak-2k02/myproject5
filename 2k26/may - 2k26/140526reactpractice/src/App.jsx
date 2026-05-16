@@ -5,9 +5,9 @@ function App(){
   const[count, setCount] = useState(0);
   return(
     <>
-      <Exampler/>
-      <p><b>counter App</b></p>
-      <button onClick={setCount((prev)=>prev + 1)}></button>
+      <Greetings/>
+      <p>counter App</p>
+      <button onClick={()=>setCount((prev)=>prev + 1)}>click me to increase the counter!!</button>
       <p>{count}</p>
     </>
   )
