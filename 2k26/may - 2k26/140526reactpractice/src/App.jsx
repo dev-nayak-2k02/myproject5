@@ -1,13 +1,14 @@
 import React, { useState } from "react"
 import './App.css'
 import { Exampler, Greetings, Welcome } from "./Exampler";
+import { Counter } from "./Counter";
 function App(){
   const[count, setCount] = useState(0);
   return(
     <>
       <Greetings/>
       <p>counter App</p>
-      <button onClick={()=>setCount((prev)=>prev + 1)}>click me to increase the counter!!</button>
+      <Counter changeCounter = {setCount}/>
       <p>{count}</p>
     </>
   )
