@@ -1,11 +1,11 @@
 import React from "react";
-function Student(props){
-    console.log(props)
-    console.log(typeof props)
+import './App.css'
+function Student({name, age, message}){
     return(
         <>
-            <p>name: {props.name}</p>
-            <p>age: {props.age}</p>
+            <p>name: {name}</p>
+            <p>age: {age}</p>
+            <button onClick={message}>click me! to get a message</button>
         </>
     )
 }

@@ -7,6 +7,9 @@ export default function App(){
   let age = 23;
   let gender = 'Male';
   let isVoting = 'Eligible'
+  function clickMessage(){
+    console.log('Clicked');
+  }
   return(
     <div>
       <h1>Dev Prasanna Nayak</h1>
@@ -18,8 +21,10 @@ export default function App(){
         <li>{age}</li>
         <li>{gender}</li>
         <li>{isVoting}</li>
+        <li><Student name={name} age={age} message={clickMessage}/></li>
+        
       </ul>
-      <Student name='dev Nayak' age={23}/>
+      
     </div>
   )
 }
