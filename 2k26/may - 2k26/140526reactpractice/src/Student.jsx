@@ -5,7 +5,7 @@ function Student({name, age, message}){
         <>
             <p>name: {name}</p>
             <p>age: {age}</p>
-            <button onClick={message}>click me! to get a message</button>
+            <button onClick={()=>{console.log(message)}}>click me! to get a message</button>
         </>
     )
 }
