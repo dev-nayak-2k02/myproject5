@@ -54,3 +54,6 @@
 // }
 
 console.log(true + false);
+console.log(null + 1);
+console.log(5 + '5');
+typeof(undefined)
