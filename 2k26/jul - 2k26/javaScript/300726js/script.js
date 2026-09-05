@@ -53,7 +53,16 @@
 //     }
 // }
 
-console.log(true + false);
-console.log(null + 1);
-console.log(5 + '5');
-typeof(undefined)
+// console.log(true + false);
+// console.log(null + 1);
+// console.log(5 + '5');
+// typeof(undefined)
+
+
+
+let input = 1329;
+let years = Math.floor(input/365);
+let months = Math.floor(input/(12*years));
+let weeks = Math.floor((input % 365)/7);
+let remdays = (input % 365)%7
+console.log(years, months, weeks, remdays);
