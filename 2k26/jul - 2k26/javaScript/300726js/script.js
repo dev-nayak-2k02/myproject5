@@ -53,6 +53,4 @@
 //     }
 // }
 
-
-
-
+console.log(true + false);
