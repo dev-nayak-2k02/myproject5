@@ -60,9 +60,36 @@
 
 
 
-let input = 1329;
-let years = Math.floor(input/365);
-let months = Math.floor(input/(12*years));
-let weeks = Math.floor((input % 365)/7);
-let remdays = (input % 365)%7
-console.log(years, months, weeks, remdays);
+// let input = 1329;
+// let years = Math.floor(input/365);
+// let months = Math.floor(input/(12*years));
+// let weeks = Math.floor((input % 365)/7);
+// let remdays = (input % 365)%7
+// console.log(years, months, weeks, remdays);
+
+
+
+
+// let input = 33278;
+// let fiveHundredNotes = Math.floor(input / 500);
+// input = Math.floor(input%500);
+// let twoHundredNotes = Math.floor(input / 200);
+// input = Math.floor(input%200);
+// let oneHundredNotes = Math.floor(input / 100)
+// input = Math.floor(input%100);
+// let FiftyNotes = Math.floor(input / 50);
+// input = Math.floor(input%50);
+// let twentyNotes = Math.floor(input / 20);
+// input = Math.floor(input%20);
+// let tenNotes = Math.floor(input / 10);
+// input = Math.floor(input%10);
+// console.log(fiveHundredNotes, twoHundredNotes, oneHundredNotes, FiftyNotes, twentyNotes, tenNotes);
+
+
+
+function getGrades(){
+    let marks = Number(prompt("enter number between 0 to 100"));
+    if(!!marks !== Number) return 'enter a number please';
+    else return 'it is number';
+}
+console.log(getGrades);
