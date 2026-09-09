@@ -87,14 +87,48 @@
 
 
 
-function getGrades(){
-    let marks = Number(prompt("enter number between 0 to 100"));
-    if(marks !== Number(marks)) return 'enter a number please';
-    if(marks <= 100 && marks >= 90) return 'A';
-    if(marks >= 80 && marks <= 89) return 'B';
-    if(marks >= 70 && marks <= 79) return 'C';
-    if(marks >= 60 && marks <= 69) return 'D';
-    if(marks >= 33 && marks <= 59) return 'E';
-    else return 'F';
+// function getGrades(){
+//     let marks = Number(prompt("enter number between 0 to 100"));
+//     if(marks !== Number(marks)) return 'enter a number please';
+//     if(marks <= 100 && marks >= 90) return 'A';
+//     if(marks >= 80 && marks <= 89) return 'B';
+//     if(marks >= 70 && marks <= 79) return 'C';
+//     if(marks >= 60 && marks <= 69) return 'D';
+//     if(marks >= 33 && marks <= 59) return 'E';
+//     else return 'F';
+// }
+// console.log(getGrades());
+
+
+
+
+// for(i = 1; i<11; i++){
+//     console.log(i);
+// }
+
+
+
+// let i = 10;
+// while(i>=1){
+//     console.log(i);
+//     i--;
+// }
+
+// for(let i = 2; i<=20; i+=2) {
+//     console.log(i);
+// }
+
+
+// for(let i = 1; i<=15;i+=2){
+//     console.log(i);
+// }
+
+
+for(let i = 5; i<=50; i=i+5){
+    console.log(i);
 }
-console.log(getGrades());
+
+
+
+
+
