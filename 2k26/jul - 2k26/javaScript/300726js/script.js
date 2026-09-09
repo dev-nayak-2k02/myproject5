@@ -89,7 +89,12 @@
 
 function getGrades(){
     let marks = Number(prompt("enter number between 0 to 100"));
-    if(!!marks !== Number) return 'enter a number please';
-    else return 'it is number';
+    if(marks !== Number(marks)) return 'enter a number please';
+    if(marks <= 100 && marks >= 90) return 'A';
+    if(marks >= 80 && marks <= 89) return 'B';
+    if(marks >= 70 && marks <= 79) return 'C';
+    if(marks >= 60 && marks <= 69) return 'D';
+    if(marks >= 33 && marks <= 59) return 'E';
+    else return 'F';
 }
-console.log(getGrades);
+console.log(getGrades());
